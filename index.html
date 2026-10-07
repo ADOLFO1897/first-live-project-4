@@ -1107,5 +1107,27 @@ made by adin
             XLSX.writeFile(wb, `Ilocos_Empanada_Sales_Report_${filenameDate}.xlsx`);
         }
     </script>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA_wR8Y0td7isTNmyApx1zmyUbY7rrnvwM",
+  authDomain: "ilocos-empanada.firebaseapp.com",
+  databaseURL: "https://ilocos-empanada-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "ilocos-empanada",
+  storageBucket: "ilocos-empanada.firebasestorage.app",
+  messagingSenderId: "888964528941",
+  appId: "1:888964528941:web:568145655a6a0ae79df1a4",
+  measurementId: "G-ZLYM714F21"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 </body>
 </html>
